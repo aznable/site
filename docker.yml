@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  web:
+    image: httpd:2.4-alpine
+    container_name: web
+    expose:
+      - 80
+      - 443
+    environment:
+      LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_MAIL}
+      VIRTUAL_HOST: ${VIRTUAL_HOST}
+      VIRTUAL_PATH: ${VIRTUAL_PATH}
+    volumes:
+      - ./web:/usr/local/apache2/htdocs
+
+networks:
+  default:
+    external:
+      name: aznable
