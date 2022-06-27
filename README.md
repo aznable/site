@@ -1,6 +1,6 @@
 # Aznable Site
 
-Guide for creating web applications under [Aznable Infra](https://github.com/aznable/infra):
+Guide for creating web applications under [Aznable Infra](https://github.com/aznable/infra).
 
 ## Installation
 
@@ -28,6 +28,7 @@ LETSENCRYPT_HOST=aznable.test
 # NGINX Proxy settings
 ###################################
 VIRTUAL_HOST=aznable.test
+VIRTUAL_DEST=/
 VIRTUAL_PATH=/
 ```
 
