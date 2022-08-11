@@ -36,7 +36,7 @@ VIRTUAL_PATH=/
 
 Full reference: [https://github.com/nginx-proxy/nginx-proxy#path-based-routing](https://github.com/nginx-proxy/nginx-proxy#path-based-routing)
 
-Default configuration for an Aznable-based site already includes `VIRTUAL_PATH` but does not cater `VIRTUAL_DEST`. `VIRTUAL_DEST` can only be used if requests are expected to not contain a sub-path and the generated links contain the sub-path.
+The default configuration already includes `VIRTUAL_PATH` but does not cater `VIRTUAL_DEST`. `VIRTUAL_DEST` can only be used if requests are expected to not contain a sub-path and the generated links contain the sub-path.
 
 ```
 # .env
